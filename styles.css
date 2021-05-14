@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* 
+Style Sheet
+to add asthetic to the site
+Author: April Schauer
+Date: 4/29/2021
+
+filename: styles.css
+colors generated from http://colorpalettes.net
+*/
+
+/*HTML and Body styles*/
+
+/*M2LO15 Apply colors using CSS
+changed text and background color
+*/
+html {
+	color: #a7c5b6;
+	background-color: #6f6f76;
+}
+
+
+/*M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector 
+psuedo-element of header and first letter, made font larger and changed color*/
+header::first-letter {
+	font-size: 75px;
+	color: #c09a99;
+}
+          
+/* Footer styles */
+/* M2LO3 Demonstrate style precedence and inheritance in CSS
+inheritance is applied to footer font from heading font-family*/
+footer { text-align: center;
+	     font-size: 20px;
+		 font-weight: bold;
+		 margin: 0px;
+		 }
+
+/*navigation styles*/
+/*M2LO5 Demonstrate contextual selectors
+used nav contextual selector*/
+/*M2LO12 Demonstrate how CSS can change presentation of page elements
+used padding to create space around navagation element*/
+nav {
+	color: #c09a99;
+	font-size: 18px; 
+	padding: 20px; 
+}
+/*M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector
+used a:hover psuedo-class selector*/
+nav > ul > li > a:hover, nav > ul > li > a:visited {
+	color: #c09a99;
+}
+
+nav > ul > li > a:link {
+    color: #91babe;
+	}
+
+/*Heading Styles */
+/*M2LO3 Demonstrate style precedence and inheritance in CSS
+precedence is applied using the font-family*/
+/*M2LO13 Demonstrate how CSS can change presentation of textual elements
+header color, size, weight and alignment were changed*/
+/*M2LO5 Demonstrate contextual selectors
+used header contextual selector*/
+/*M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
+added a second color using rgb to accomidate older browsers*/
+header {
+	color: #a7c5b6;
+	color: rgb(168, 205, 186);
+	font-size: 40px; 
+	font-weight: bold;
+	font-family: "Courier New', courier, monospace;
+	margin: 0; 
+	text-align: center; 
+    }
+
+
+ 
+
+
+
